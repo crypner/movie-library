@@ -1,0 +1,20 @@
+version: '4'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - .env
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8010:3000"
+    environment:
+      - PORT=3000
+    depends_on:
+      - backend

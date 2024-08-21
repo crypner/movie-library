@@ -1,0 +1,243 @@
+body{
+  background-color: #161e27;
+  font-family: "Lato", sans-serif;
+}
+
+main{
+  padding-bottom: 100px;
+}
+
+.mainbg{
+  background-color: #161e27;
+  background-image: url(../public/mainBG.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(13px) brightness(0.4);
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1{
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h4{
+  color: #bbb;  
+}
+
+.m0{
+  margin: 0;
+}
+
+.mt-100{
+  margin-top: 100px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+
+.pt-50{
+  padding-top: 50px;
+}
+
+nav.navbar{
+  background: #430f1100;
+  height: 80px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+nav.navbar.scrolled{
+  background: #430f11cc;
+}
+
+.navbar-toggler{
+  border: none;
+  outline: none;
+  box-shadow: none!important;
+}
+
+.SearchGroup{
+  border-bottom: 1px solid #a5a5a5;
+}
+form{
+  margin-top: 5px;
+}
+
+.SearchGroup .btn{
+  color: #fff;
+  font-size: 20px;
+}
+
+.searchInput {
+  background-color: #430f1100!important;
+  color: #fff;
+  border: none;
+  padding: 10px; 
+  outline: none;
+  box-shadow: none!important;
+}
+
+.searchInput:focus {
+  background-color: #430f1100!important;
+  color: #fff;
+}
+
+.searchInput:focus-within {
+  background-color: #430f1100!important;
+  color: #fff!important;
+}
+
+/* Handle autofill background color */
+.searchInput:-webkit-autofill,
+.searchInput:-webkit-autofill:hover,
+.searchInput:-webkit-autofill:focus {
+  background-color: #430f1100 !important; 
+  color: #fff!important; 
+  transition: all 5000s ease-in-out 0s; /* Prevent flash of autofill color */
+}
+
+/* Handle autofill background color for Firefox */
+.searchInput:-moz-autofill {
+  background-color: #430f1100 !important; 
+  color: #fff!important; 
+}
+
+.searchInput::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* Edge 12-18 placeholder styling */
+.searchInput::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.card{
+  border:none;
+  max-width: 236px;
+  margin: 0 auto 30px;
+  background: #00000000;
+  color: #fff;
+}
+
+.card-body {
+  padding: 10px 0;
+}
+
+.card-img-top{
+  width: 101%;
+  height: 295px;
+  margin: -1px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title{
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.card-text{
+  color: #aaa;
+  margin: 0px 0 5px;
+}
+
+.starRating svg{
+  margin-right: 5px;
+  color:yellow;
+}
+
+.movie_BG{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(13px) brightness(0.4);
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.movie-poster{
+  border-radius: 30px 10px;
+  box-shadow: 0px 0px 30px #333;
+}
+
+.movie-overview{
+  color: #eee;
+}
+
+.movie-release{
+  color: #ccc;
+}
+
+.genre-list{
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.nav.nav-pills{
+  margin: 20px 0 15px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.nav-link{
+  color: #fff;
+}
+.nav-link:hover{
+  color: #ccc;
+}
+
+.cast-member{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #ccc;
+}
+.cast-member strong{
+  color: #FFFFFF;
+}
+.cast-profile-img{
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #mainnavbar {
+    text-align: center;
+    background: #430f11cc;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+  }
+  #mainnavbar form{
+    margin-top: 30px;
+  }
+}
